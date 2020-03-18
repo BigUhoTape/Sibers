@@ -7,6 +7,7 @@
                   <input type="text" v-model="searchValue">
                   <button @click="search(searchValue)">Search</button>
               </div>
+              <button v-if="searchValue.length" @click="search('')">All contacts</button>
               <contactList />
           </div>
       </div>
